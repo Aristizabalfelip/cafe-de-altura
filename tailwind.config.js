@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         custom: '#2B2A2B',
         colorHero : 'rgba(227, 222, 215, 0.30)',
+        greenNoHover : '#2A5B45'
       },
       backgroundImage: {
         'custom-image': "url('./assets/Cristal.png')",

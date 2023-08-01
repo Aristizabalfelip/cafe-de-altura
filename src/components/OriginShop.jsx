@@ -5,7 +5,7 @@ import { CardInnovations } from './CardInnovations';
 export const OriginShop = () => {
 
     const [arrayCoffees, setArrayCoffees] = useState([])
-console.log(arrayCoffees);
+
     useEffect(() => {
         asynFunction('https://cafe-de-altura.vercel.app/api/products').then(res => setArrayCoffees(res.products))
 
