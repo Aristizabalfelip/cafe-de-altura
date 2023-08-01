@@ -2,8 +2,8 @@ import React from 'react'
 
 export const NavList = ({name}) => {
   return (
-    <ul>
+    <li>
         {name}
-    </ul>
+    </li>
   )
 }
