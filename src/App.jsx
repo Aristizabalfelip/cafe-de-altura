@@ -1,12 +1,17 @@
-import { Nav } from "./components/Nav";
-import { Home } from './components/Home'
+import { Home } from './generalPages/Home'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Shop } from './generalPages/Shop';
 
 
 function App() {
   return (
-    <div className="App">
-    < Home />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 

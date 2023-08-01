@@ -7,8 +7,13 @@ module.exports = {
     extend: {
       colors: {
         custom: '#2B2A2B',
+        colorHero : 'rgba(227, 222, 215, 0.30)',
+      },
+      backgroundImage: {
+        'custom-image': "url('./assets/Cristal.png')",
       },
     },
   },
   plugins: [],
 }
+

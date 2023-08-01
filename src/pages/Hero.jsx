@@ -1,11 +1,11 @@
 import React from 'react'
-import { Button } from './Button'
+import { Button } from '../components/Button'
 import hero from '../assets/hero.png'
 
 export const Hero = () => {
 
   return (
-    <div className='px-10 py-10'>
+    <div className='px-10 py-10 bg-colorHero'>
         <div className='flex gap-6'>
             <section className='flex flex-col gap-4'>
                 <h3>De la planta a tu taza</h3>

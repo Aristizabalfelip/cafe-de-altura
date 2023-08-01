@@ -1,13 +1,13 @@
 import React from 'react'
-import { CardBestCond } from './CardBestCond'
+import { CardBestCond } from '../components/CardBestCond'
 import check from '../assets/check.png'
 import truck from '../assets/truck.png'
 import gift from '../assets/gift.png'
 
 
-export const SectionCardsInno = () => {
+export const Conditions = () => {
   return (
-    <div className='flex flex-col gap-6 px-[147px] py-12'>
+    <div className='bg-custom-image bg-cover bg-center bg-no-repeat flex flex-col gap-6 px-[147px] py-12' >
         <h2>Café con las mejores condiciones</h2>
         <div className='flex '>
             <CardBestCond 
