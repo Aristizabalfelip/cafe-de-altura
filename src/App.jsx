@@ -8,7 +8,7 @@ export const PurchaseContext = createContext();
 function App() {
 
   const [purchase, setPurchase] = useState([])
- 
+  console.log(purchase);
 
   return (
     < PurchaseContext.Provider value={{ purchase,setPurchase }} >
