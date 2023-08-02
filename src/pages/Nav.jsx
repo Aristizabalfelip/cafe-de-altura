@@ -22,7 +22,8 @@ export const Nav = () => {
                 </section>
                 < Button name={'Iniciar sesión'} />
             </div>
-            <img src={bag} alt="" />
+            <Link to="/shoppingcart"><img src={bag} alt="" /></Link>
+            
         </nav>
     )
 }

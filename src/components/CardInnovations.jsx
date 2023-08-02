@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Button } from './Button'
 import {addCoffee} from '../utils/addCoffee'
 import { PurchaseContext } from '../App'
@@ -6,7 +6,8 @@ import { PurchaseContext } from '../App'
 export const CardInnovations = ({img,name,price}) => {
  
   const buttonStyle = 'p-2 rounded bg-greenNoHover text-white'
-  const {setPurchase} = useContext(PurchaseContext)
+  const {setPurchase } = useContext(PurchaseContext)
+
 
   return (
     <div className='flex flex-col justify-end items-center p-6 gap-6 rounded-lg border'>
