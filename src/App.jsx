@@ -2,13 +2,13 @@ import { Home } from './generalPages/Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Shop } from './generalPages/Shop';
 import { createContext, useState } from 'react';
-import { ShoppingCart } from './generalPages/ShoppingCart';
+import { ShoppingCart } from './generalPages/ShoppingCartContext';
 
 export const PurchaseContext = createContext();
 function App() {
 
   const [purchase, setPurchase] = useState([])
-  console.log(purchase);
+
 
   return (
     < PurchaseContext.Provider value={{ purchase,setPurchase }} >

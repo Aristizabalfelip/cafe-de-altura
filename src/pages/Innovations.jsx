@@ -8,7 +8,7 @@ export const Innovations = () => {
 
     const [arrayProductsCoffees, setArrayProductsCoffees] = useState([]) 
     const coffees = ['Costa Rica Tarrazú', 'Colombia Los Naranjos', 'Laos Amanecer', 'Etiopía Yrgacheff']
-    // console.log(arrayProductsCoffees);
+ 
 
     useEffect(() => {
         asynFunction('https://cafe-de-altura.vercel.app/api/products').then(res => setArrayProductsCoffees(res.products))
