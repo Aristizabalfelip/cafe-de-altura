@@ -4,6 +4,7 @@ import telSilver from '../assets/telSilver.png'
 import mail from '../assets/mail.png'
 import { NavList } from '../components/NavList'
 import { ButtonContact } from '../components/ButtonContact'
+import { RightsReserved } from '../components/RightsReserved'
 
 
 export const Footer = () => {
@@ -29,7 +30,7 @@ export const Footer = () => {
                         </ul></div>
                 </div>
             </section>
-            <section><p>Todos los derechos reservados - Café de Altura SL - 2022</p></section>
+            < RightsReserved />
         </div>
     )
 }

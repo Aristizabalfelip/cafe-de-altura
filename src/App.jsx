@@ -5,13 +5,17 @@ import { createContext, useState } from 'react';
 import { ShoppingCart } from './generalPages/ShoppingCartContext';
 
 export const PurchaseContext = createContext();
+export const BillContext = createContext();
+
 function App() {
 
   const [purchase, setPurchase] = useState([])
+  const [bill, setBill] = useState(0)
 
+  console.log(bill);
 
   return (
-    < PurchaseContext.Provider value={{ purchase,setPurchase }} >
+    < PurchaseContext.Provider value={{ purchase, setPurchase,setBill, bill}} >
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

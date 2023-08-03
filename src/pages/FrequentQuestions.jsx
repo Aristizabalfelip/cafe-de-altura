@@ -3,7 +3,7 @@ import { Questions } from '../components/Questions'
 
 export const FrequentQuestions = () => {
   return (
-    <div>
+    <div className='bg-greenNoHover'>
         <h2>Preguntas frecuentes</h2>
         <div>
             < Questions name={'¿Cómo hago el pedido?'} text={'Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te preguntaremos cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás sin café.'}/>
