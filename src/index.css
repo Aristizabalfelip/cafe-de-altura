@@ -1,17 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
     max-width: 1280px;
-
+    font-size: 14px;
+    list-style: none;
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
 }
-/* .ContImg {
-    padding: 48px 147px;
-    background-image: url(../assets/Cristal.png);
-    background-repeat: no-repeat;
-    background-size: 1280px;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
+

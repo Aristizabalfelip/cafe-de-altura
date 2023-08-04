@@ -8,7 +8,7 @@ export const ShippingPriceContext = createContext()
 
 export const ShoppingCart = () => {
 
-  const [shippingPrice, setShippingPrice] = useState('GRATIS')
+  const [shippingPrice, setShippingPrice] = useState(0)
 
 
 
@@ -17,7 +17,6 @@ export const ShoppingCart = () => {
       < Nav />
       < ShippingPriceContext.Provider value={{ setShippingPrice, shippingPrice }} >
         < SectionCart />
-        <ShippingSelection />
       </ShippingPriceContext.Provider>
       < RightsReserved />
     </>

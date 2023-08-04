@@ -9,6 +9,9 @@ export const priceCoffees = (purchase) => {
 }
 
 export const coffeeBill = (setBill, shippingPrice, purchaseTotal, bill) => {
-  shippingPrice === 'GRATIS' ? setBill(purchaseTotal) : setBill(purchaseTotal + 9);
-  return bill
+
+  if (purchaseTotal > 0) {
+    shippingPrice === 0 ? setBill(purchaseTotal) : setBill(purchaseTotal + 9);
+    return bill
+  }
 }

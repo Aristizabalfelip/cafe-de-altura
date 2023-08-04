@@ -12,7 +12,7 @@ function App() {
   const [purchase, setPurchase] = useState([])
   const [bill, setBill] = useState(0)
 
-  console.log(bill);
+
 
   return (
     < PurchaseContext.Provider value={{ purchase, setPurchase,setBill, bill}} >

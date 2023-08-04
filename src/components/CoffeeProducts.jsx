@@ -8,6 +8,7 @@ export const CoffeeProducts = ({ quantity, img, name, price }) => {
     const { setPurchase } = useContext(PurchaseContext)
 
     return (
+        <>
         <div className='flex items-start gap-6'>
             <section className='flex content-center items-center gap-2 self-stretch'>
                 < Button name={'-'} handleClick={() => cartButtonFuntion('-', setPurchase, name, price)} />
@@ -19,9 +20,12 @@ export const CoffeeProducts = ({ quantity, img, name, price }) => {
                 <p>{name}</p>
                 <p>Paquete de café, 250 gr</p>
             </section>
-            <p>{price * quantity},00 €</p>
-            <hr className='text-colorHero' />
-
+            <p className='text-lg font-semibold'>{price * quantity},00 €</p>
+            
+            
         </div>
+        <hr className='bg-blue-500 h-px w-[768.68px]'/>
+        </>
+        
     )
 }
