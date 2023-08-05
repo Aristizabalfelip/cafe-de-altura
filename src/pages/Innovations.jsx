@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { asynFunction } from '../utils/asynFunction'
 import { innovationCoffeeFilters } from '../utils/filterMethods'
 import { CardInnovations } from '../components/CardInnovations'
-import arrow from '../assets/arrow.png'
+import { ArrowText } from '../components/ArrowText'
+
 
 export const Innovations = () => {
 
@@ -16,8 +17,8 @@ export const Innovations = () => {
     }, [])
 
     return (
-        <div>
-            <h2>Novedades</h2>
+        <div className='flex flex-col p-10 items-center gap-10 '>
+            <h2 className='flex justify-center text-2xl font-medium text-greenNoHover'>Novedades</h2>
             <div className='flex p-10 gap-10'>
                 {
                     innovationCoffeeFilters(coffees, arrayProductsCoffees).map((coffee, i) => {
@@ -30,10 +31,7 @@ export const Innovations = () => {
                     })
                 }
             </div>
-            <div>
-                <p>Ver todos</p>
-                <img src={arrow} alt="" />
-            </div>
+           < ArrowText name='Ver todos' />
         </div>
     )
 }

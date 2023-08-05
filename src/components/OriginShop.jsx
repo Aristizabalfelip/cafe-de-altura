@@ -12,9 +12,9 @@ export const OriginShop = () => {
     }, [])
 
   return (
-    <div>
-        <h2>Últimos orígenes</h2>
-        <div className='flex flex-wrap'>
+    <div className='flex flex-col p-10 items-center gap-6'>
+        <h2 className='flex justify-center text-2xl font-medium text-greenNoHover'>Últimos orígenes</h2>
+        <div className='flex flex-wrap gap-6 w-[1200px]'>
         {
           arrayCoffees.map((coffee,i) => {
             return <CardInnovations 

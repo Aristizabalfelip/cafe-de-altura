@@ -1,7 +1,10 @@
 import React from 'react'
 
-export const ButtonContact = ({name,img}) => {
+export const ButtonContact = ({ name, img, styleBu }) => {
   return (
-<button><img src={img} alt="" />{name}</button>
+    <button className={styleBu}>
+      <img src={img} alt="" /> <p>{name}</p>
+    </button>
   )
 }
+

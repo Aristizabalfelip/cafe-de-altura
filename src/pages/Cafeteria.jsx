@@ -1,6 +1,7 @@
 import React from 'react'
 import arrow from '../assets/arrow.png'
 import cafeteria from '../assets/cafeteria.png'
+import { ArrowText } from '../components/ArrowText'
 
 
 export const Cafeteria = () => {
@@ -10,7 +11,7 @@ export const Cafeteria = () => {
                 <section>
                     <h2>Pruébalo en nuestro coffee shop</h2>
                     <p>Visita nuestra cafetería en el centro de la ciudad para probar los granos de café antes de hacer tu pedido y llévate un descuento</p>
-                    <div><p>Cómo llegar</p><img src={arrow} alt="" /></div>
+                    <div> < ArrowText name='Cómo llegar' /></div>
                 </section>
                 <section><img src={cafeteria} alt="" /></section>
             </div>
