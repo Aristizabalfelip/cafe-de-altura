@@ -7,20 +7,20 @@ import { FrequentQuestions } from '../pages/FrequentQuestions'
 import { Cafeteria } from '../pages/Cafeteria'
 import { Contact } from '../pages/Contact'
 import { Footer } from '../pages/Footer'
+import { RightsReserved } from '../components/RightsReserved'
 
 export const Home = () => {
   return (
-
-        <>
-          < Nav />
-          < Hero />
-          < Conditions />
-          < Innovations />
-          < FrequentQuestions />
-          < Cafeteria />
-          < Contact />
-          < Footer />
-        </>
- 
+    <>
+      < Nav />
+      < Hero />
+      < Conditions />
+      < Innovations />
+      < FrequentQuestions />
+      < Cafeteria />
+      < Contact />
+      < Footer />
+      < RightsReserved />
+    </>
   )
-}
+};

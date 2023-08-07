@@ -12,7 +12,7 @@ export const InputForm = ({ type, text, name, value, onChange }) => {
 
     const optionSelect = () => {
         if (name === 'tel') {
-            return  <div className=' self-stretch border rounded'><select name="" id="">  <option value="value1" selected>US</option>
+            return <div className=' self-stretch border rounded'><select name="" id="">  <option value="value1" selected>US</option>
                 <option value="value2">SP</option>
                 <option value="value3">IT</option>
             </select> <input className={`${name === 'textArea' ? 'h-[122px]' : ''} rounded py-[9px] px-[13px]`}
@@ -21,20 +21,17 @@ export const InputForm = ({ type, text, name, value, onChange }) => {
 
         } else {
             return <input className={`${name === 'textArea' ? 'h-[122px]' : ''} ${name === 'check' ? '' : 'w-[470px]'}
-            border self-stretch  rounded py-[9px] px-[13px]`}
+            border self-stretch  rounded py-[9px] px-[13px] `}
                 type={type} name={name} value={value} onChange={onChange}
                 placeholder={placeHolder(name)} />
         }
     }
 
-
     return (
         <div className={`flex ${type === 'checkbox' ? 'flex-row-reverse justify-end' : 'flex-col'} gap-1 self-stretch`}>
             <label htmlFor={name}>{text}</label>
-
-            <div className={`${name === 'tel' ? 'w-[470px]' : ''}`}>{ optionSelect() }
+            <div className={`${name === 'tel' ? 'w-[470px]' : ''}`}>{optionSelect()}
             </div>
-
         </div>
     )
 }

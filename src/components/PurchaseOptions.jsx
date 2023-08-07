@@ -8,7 +8,7 @@ export const PurchaseOptions = ({ option, value }) => {
     if (option === 'ENVÍO') {
       return value === 0  ? 'GRATIS' : `${(value.toFixed(2)).replace(".", ",")} €`
     } else {
-      // console.log( option,value);
+
       return    value > 0 ? `${(value?.toFixed(2)).replace(".", ",")} €` :''
     }
 

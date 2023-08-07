@@ -16,7 +16,8 @@ module.exports = {
         coBuSe : '#515051',
         selBagCo : '#F7F5F3',
         coContact : '#E3DED7',
-        coTextCont : '#6B7280'
+        coTextCont : '#6B7280',
+        coBuBlack : '#1F1815'
       },
       backgroundImage: {
         'custom-image': "url('./assets/Cristal.png')",

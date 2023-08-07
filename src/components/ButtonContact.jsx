@@ -6,5 +6,5 @@ export const ButtonContact = ({ name, img, styleBu }) => {
       <img src={img} alt="" /> <p>{name}</p>
     </button>
   )
-}
+};
 

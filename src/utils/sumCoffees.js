@@ -4,7 +4,6 @@ export const priceCoffees = (purchase) => {
     const multiplication = obj.price * obj.quantity;
     return acum + multiplication;
   }, 0);
-console.log(result);
   return result
 }
 
