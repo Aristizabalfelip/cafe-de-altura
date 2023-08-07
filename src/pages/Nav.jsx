@@ -28,7 +28,6 @@ export const Nav = () => {
             <Link to="/shoppingcart" className='flex gap-2 items-center'><img className='w-[17.665px] h-5' src={bag} alt="" />
                 <p className='flex flex-col w-6 h-6 p-2 justify-center rounded-full bg-coCantCof'>{purchase.reduce((acum, obj) => acum + obj.quantity, 0)}</p>
             </Link>
-
         </nav>
     )
 }

@@ -11,8 +11,6 @@ export const SectionCart = () => {
 
     const { purchase, setBill, bill } = useContext(PurchaseContext)
     const { shippingPrice } = useContext(ShippingPriceContext)
-     
-    console.log(purchase);
 
     return (
         <div className='flex flex-col p-10 gap-6 self-stretch' >
@@ -33,7 +31,6 @@ export const SectionCart = () => {
                             />
                         })
                     }
-
                     <ShippingSelection />
                 </section>
                 <section className=' flex flex-col p-6 bg-colorTotal h-[280px] gap-4'>
@@ -50,7 +47,6 @@ export const SectionCart = () => {
                         < Button name={'Seguir comprando'} buttonStyle={'rounded py-3 px-6 text-greenNoHover font-semibold'} />
                     </div>
                 </section>
-
             </div>
         </div>
     )

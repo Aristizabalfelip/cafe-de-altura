@@ -2,11 +2,11 @@ import React, { useContext } from 'react'
 import { ShippingOption } from '../components/ShippingOption'
 import { ShippingPriceContext } from '../generalPages/ShoppingCartContext'
 import { PurchaseContext } from '../App'
-import { priceCoffees} from '../utils/sumCoffees'
+import { priceCoffees } from '../utils/sumCoffees'
 
 export const ShippingSelection = () => {
 
-  const { setShippingPrice} = useContext(ShippingPriceContext)
+  const { setShippingPrice } = useContext(ShippingPriceContext)
   const { purchase } = useContext(PurchaseContext)
 
   return (

@@ -2,19 +2,15 @@ import React from 'react'
 
 export const PurchaseOptions = ({ option, value }) => {
 
-
-
   const functionChange = (option, value) => {
     if (option === 'ENVÍO') {
       return value === 0  ? 'GRATIS' : `${(value.toFixed(2)).replace(".", ",")} €`
     } else {
-
       return    value > 0 ? `${(value?.toFixed(2)).replace(".", ",")} €` :''
     }
 
   }
  
-
   return (
     <div className='flex w-[336px] justify-between'>
       <p>{option}</p>

@@ -14,8 +14,7 @@ export const Hero = () => {
                 <p>Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de café y que puedas viajar desde la comodidad de tu hogar.</p>
                 <div className='flex gap-4'>
                     < Button name='Descubrir orígenes' buttonStyle='py-3 px-6 bg-coBuBlack text-white rounded'  />
-                    < Button name='Comprar café' buttonStyle='py-3 px-6 bg-greenNoHover text-white rounded'/>
-                       
+                    < Button name='Comprar café' buttonStyle='py-3 px-6 bg-greenNoHover text-white rounded'/>  
                 </div>
                 </section>
             <section><img className='h-[364px] w-[667px]' src={hero} alt="" /></section>
